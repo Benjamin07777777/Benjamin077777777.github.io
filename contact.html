@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Me - Benjamin R. Fancubit</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background: url('background3.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 50px;
+    }
+
+    .box {
+      background-color: rgba(0, 102, 204, 0.8);
+      border-radius: 10px;
+      padding: 15px;
+      width: 30%;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .box i {
+      font-size: 24px;
+    }
+
+    .center-box {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .contact-form {
+      background-color: rgba(0, 102, 204, 0.8);
+      padding: 20px;
+      border-radius: 15px;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .contact-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .back-button {
+      display: block;
+      text-align: center;
+      margin: 40px auto 0;
+      background-color: green;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media screen and (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .box {
+        width: 90%;
+        margin-bottom: 15px;
+        justify-content: center;
+      }
+    }
+  </style>
+  <!-- FontAwesome CDN for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div class="header">
+    <div class="box">
+      <i class="fas fa-map-marker-alt"></i>
+      Shomolong, Holyghost 09<br>Philippines, Baguio City 2600
+    </div>
+
+    <div class="box center-box">
+      <i class="fas fa-phone-alt"></i>
+      09161587319 / 09626600577
+    </div>
+
+    <div class="box">
+      <i class="fas fa-envelope"></i>
+      benjaminrobilfancubit3@email.com
+    </div>
+  </div>
+
+  <div class="contact-form">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Enter your name" required>
+      <input type="email" placeholder="Enter your email address" required>
+      <textarea rows="5" placeholder="Enter your message or description" required></textarea>
+    </form>
+  </div>
+
+  <a href="index.html" class="back-button">⬅ Back to Homepage</a>
+
+</body>
+</html>

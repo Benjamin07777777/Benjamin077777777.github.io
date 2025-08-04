@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Benjamin Robil Fancubit - Portfolio</title>
+  <!-- Font Awesome for Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #dff6fd; /* light blue base */
+      overflow: hidden;
+    }
+
+    body {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .half {
+      width: 50%;
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    /* Left side: Animated Benjamin background */
+    .left {
+      animation: moveBg 20s infinite linear alternate;
+      background-image: url('benjamin.jpg');
+    }
+
+    @keyframes moveBg {
+      0% {
+        background-position: center top;
+      }
+      100% {
+        background-position: center bottom;
+      }
+    }
+
+    /* Right side: Janitor background with nav links */
+    .right {
+      background-image: url('janitor.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    nav {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      z-index: 10;
+    }
+
+    nav a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 1rem;
+      padding: 10px 16px;
+      background-color: rgba(0, 140, 190, 0.8);
+      border-radius: 30px;
+      text-shadow: 1px 1px 2px #000;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: white;
+      color: #008ecf;
+    }
+
+    .intro-text {
+      position: absolute;
+      top: 50%;
+      left: 50px;
+      transform: translateY(-50%);
+      color: white;
+      max-width: 450px;
+      text-shadow:
+        2px 2px 6px rgba(0, 0, 0, 0.9),
+        -1px -1px 0 #00b8ff;
+    }
+
+    .intro-text h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    .intro-text p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .social-icons {
+      margin-top: 20px;
+    }
+
+    .social-icons a {
+      margin-right: 15px;
+      font-size: 1.6rem;
+      color: white;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #00cfff;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      .half {
+        width: 100%;
+        height: 50vh;
+      }
+
+      .intro-text {
+        position: static;
+        transform: none;
+        text-align: center;
+        margin: 40px auto;
+        padding: 0 20px;
+      }
+
+      nav {
+        position: static;
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      .social-icons {
+        justify-content: center;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Left Half: Benjamin Background with Moving Effect -->
+  <div class="left half">
+    <div class="intro-text">
+      <h1>I’m Benjamin Robil Fancubit</h1>
+      <p>Welcome to my official portfolio website — a place to learn about who I am, what I love, and how to connect with me.</p>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://youtube.com" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right Half: Janitor Background with Navigation -->
+  <div class="right half">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about me.html">About Me</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+
+</body>
+</html>

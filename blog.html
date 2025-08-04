@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Benjamin Fancubit | Work Experience as Janitor</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .top-half {
+      background-color: green;
+      padding: 30px;
+      text-align: center;
+      color: white;
+    }
+
+    .top-half img {
+      width: 300px;
+      border-radius: 10px;
+    }
+
+    .title {
+      font-size: 32px;
+      color: blue;
+      text-transform: uppercase;
+      margin-top: 20px;
+    }
+
+    .bottom-half {
+      background-color: #add8e6;
+      padding: 20px 30px;
+      position: relative;
+    }
+
+    .author-section {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .author-section img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+
+    .author-name {
+      font-size: 18px;
+      color: #333;
+    }
+
+    .date {
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .post-intro {
+      margin: 20px 0;
+      font-style: italic;
+      font-size: 16px;
+      color: #444;
+    }
+
+    .read-button {
+      background-color: #007bff;
+      color: white;
+      padding: 12px 20px;
+      font-weight: bold;
+      border-radius: 5px;
+      width: fit-content;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .read-button:hover {
+      background-color: #0056b3;
+    }
+
+    .post-content {
+      display: none;
+      margin-top: 20px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .post-content h3 {
+      color: #0056b3;
+    }
+
+    .back-button {
+      margin-top: 30px;
+      background-color: red;
+      color: white;
+      padding: 12px 18px;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .back-button:hover {
+      background-color: darkred;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Section -->
+  <div class="top-half">
+    <img src="janitor.jpg" alt="Janitor Photo">
+    <div class="title">MY WORK EXPERIENCE AS A JANITOR</div>
+  </div>
+
+  <!-- Bottom Section -->
+  <div class="bottom-half">
+    <div class="author-section">
+      <img src="Benjamin.jpg" alt="Benjamin R. Fancubit">
+      <div class="author-name"><strong>By:</strong> Benjamin R. Fancubit</div>
+    </div>
+    <div class="date"><strong>Date:</strong> August 3, 2025</div>
+
+    <div class="post-intro">
+      In this post of the day, Benjamin represents his job experiences as a student to inspire and encourage others who are working while studying.
+    </div>
+
+    <div class="read-button" onclick="document.getElementById('postContent').style.display='block'; this.style.display='none';">
+      READ THIS POST
+    </div>
+
+    <!-- Hidden Content -->
+    <div class="post-content" id="postContent">
+      <h3>Introduction</h3>
+      <p>
+        Balancing school and work has always been a challenge, but it has also shaped me into a more responsible and focused individual. 
+        My work experience as a janitor has taught me valuable life lessons that no classroom could ever fully provide.
+      </p>
+
+      <h3>My Work Experience</h3>
+      <p>
+        As a janitor at the University of the Cordilleras, I began my journey by handling basic cleaning duties — sweeping floors, emptying trash bins, 
+        and sanitizing rooms. I arrived early every day to make sure that the campus was a clean and safe environment for students and staff alike.
+      </p>
+      <p>
+        I took pride in what I did, even when it was physically exhausting. While mopping floors or dusting desks, I found quiet moments of reflection. 
+        Each task reminded me of the importance of humility, discipline, and perseverance.
+      </p>
+      <p>
+        There were days when I felt tired or overwhelmed — balancing exams, lectures, and an 8-hour shift wasn't easy. 
+        But through it all, I never lost sight of my goals. My job gave me perspective, built my character, and helped me value every peso I earned.
+      </p>
+
+      <h3>Conclusion</h3>
+      <p>
+        Working as a janitor while pursuing my degree in Criminology is not something I’m ashamed of — in fact, I’m proud of it. 
+        It taught me resilience, gave me purpose, and built my work ethic. I learned how to manage time, communicate with others, and take responsibility. 
+        I hope my story reminds other students that no job is too small and every effort counts. 
+        If you are working and studying, know this: you are strong, and your dedication will pay off.
+      </p>
+      <p>
+        Keep pushing forward, even if it feels tough. Because every step you take, no matter how hard, is a step closer to your dreams.
+      </p>
+    </div>
+
+    <!-- Back Button -->
+    <a class="back-button" href="index.html">BACK TO HOMEPAGE</a>
+  </div>
+
+</body>
+</html>
